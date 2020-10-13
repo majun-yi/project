@@ -1,0 +1,20 @@
+## 端口设置
+server:
+  port: 8080
+
+
+# mongo连接配置
+spring:
+  data:
+    mongodb:
+      uri: mongodb://localhost:27017/test_student
+      #脱粉转下划线
+      field-naming-strategy: org.springframework.data.mapping.model.SnakeCaseFieldNamingStrategy
+      #开启事务
+      transactionEnabled: true
+# swagger配置
+springfox:
+  documentation:
+    swagger:
+      v2:
+        path: /
