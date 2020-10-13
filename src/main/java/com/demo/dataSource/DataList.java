@@ -16,6 +16,7 @@ public class DataList {
      * 充当数据源的容器
      */
     private static List<Student> stuList = new ArrayList<>();
+/*
 
     static {
         stuList.add(new Student(1, "张三", "男", "一年级"));
@@ -40,6 +41,7 @@ public class DataList {
         stuList.add(new Student(9, "雪女", "男", "二年级"));
         stuList.add(new Student(10, "旷秀", "男", "二年级"));
     }
+*/
 
     public static List<Student> newInstance() {
         return stuList;

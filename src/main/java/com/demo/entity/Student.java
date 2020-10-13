@@ -3,6 +3,9 @@ package com.demo.entity;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import org.springframework.data.mongodb.core.mapping.Document;
+
+import java.io.Serializable;
 
 /**
  * @Description 学生实体类
@@ -11,11 +14,12 @@ import lombok.NoArgsConstructor;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class Student {
+@Document("tb_student")
+public class Student implements Serializable {
     /**
      * 学生id
      */
-    private Integer id;
+    private String id;
     /**
      * 学生姓名
      */
